@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://dm841dcgl4t1m"]
+[gd_scene load_steps=7 format=3 uid="uid://dm841dcgl4t1m"]
 
+[ext_resource type="Script" uid="uid://o4qvhc5q2cx5" path="res://GE2Assignment/bird.gd" id="1_jrhqa"]
 [ext_resource type="PackedScene" uid="uid://ds03yqqhjsncb" path="res://GE2Assignment/BirdBody.tscn" id="1_nte10"]
 [ext_resource type="PackedScene" uid="uid://dah0ab8nybcqe" path="res://GE2Assignment/BirdWingLeft.tscn" id="2_s0wwx"]
 [ext_resource type="PackedScene" uid="uid://2pmbchtn58ox" path="res://GE2Assignment/BirdWingRight.tscn" id="3_jrhqa"]
@@ -10,6 +11,7 @@
 [node name="Bird" type="Node3D"]
 
 [node name="Bird" type="CharacterBody3D" parent="."]
+script = ExtResource("1_jrhqa")
 
 [node name="BirdBody" parent="Bird" instance=ExtResource("1_nte10")]
 

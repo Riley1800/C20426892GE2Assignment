@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://r0205qumtxvr"]
+[gd_scene load_steps=6 format=3 uid="uid://r0205qumtxvr"]
 
 [ext_resource type="PackedScene" uid="uid://ba8rvhoabl0kn" path="res://GE2Assignment/MouseBody.tscn" id="1_2uawj"]
+[ext_resource type="Script" uid="uid://dt42ofsg1yqj2" path="res://GE2Assignment/mouse.gd" id="1_hu1wn"]
 [ext_resource type="PackedScene" uid="uid://cupp6rd76h0bs" path="res://GE2Assignment/MouseLimb.tscn" id="2_ssc7a"]
 [ext_resource type="PackedScene" uid="uid://hhlxfsdu6un2" path="res://GE2Assignment/MouseTail.tscn" id="3_hu1wn"]
 
@@ -9,6 +10,7 @@
 [node name="Mouse" type="Node3D"]
 
 [node name="Mouse" type="CharacterBody3D" parent="."]
+script = ExtResource("1_hu1wn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Mouse"]
 shape = SubResource("CapsuleShape3D_ssc7a")

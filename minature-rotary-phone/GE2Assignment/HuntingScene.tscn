@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bs1n6h55ks4dl"]
+
+[ext_resource type="PackedScene" uid="uid://dm841dcgl4t1m" path="res://GE2Assignment/Bird.tscn" id="1_dunje"]
+[ext_resource type="PackedScene" uid="uid://r0205qumtxvr" path="res://GE2Assignment/Mouse.tscn" id="2_fag3w"]
+
+[node name="HuntingScene" type="Node3D"]
+
+[node name="Bird" parent="." instance=ExtResource("1_dunje")]
+
+[node name="Mouse" parent="." instance=ExtResource("2_fag3w")]

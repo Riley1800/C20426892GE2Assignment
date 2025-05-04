@@ -1,3 +1,13 @@
 [gd_scene format=3 uid="uid://orx6t50fbm0g"]
 
 [node name="BirdFoot" type="Node3D"]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+
+[node name="LegStem" type="CSGCylinder3D" parent="CSGCombiner3D"]
+
+[node name="Toe1" type="CSGCylinder3D" parent="CSGCombiner3D"]
+
+[node name="Toe2" type="CSGCylinder3D" parent="CSGCombiner3D"]
+
+[node name="Toe3" type="CSGCylinder3D" parent="CSGCombiner3D"]

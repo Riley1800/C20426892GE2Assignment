@@ -1,10 +1,39 @@
-[gd_scene load_steps=3 format=3 uid="uid://bs1n6h55ks4dl"]
+[gd_scene load_steps=8 format=3 uid="uid://bs1n6h55ks4dl"]
 
 [ext_resource type="PackedScene" uid="uid://dm841dcgl4t1m" path="res://GE2Assignment/Bird.tscn" id="1_dunje"]
 [ext_resource type="PackedScene" uid="uid://r0205qumtxvr" path="res://GE2Assignment/Mouse.tscn" id="2_fag3w"]
 
+[sub_resource type="Sky" id="Sky_dunje"]
+
+[sub_resource type="Environment" id="Environment_fag3w"]
+resource_local_to_scene = true
+background_mode = 2
+sky = SubResource("Sky_dunje")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xkcow"]
+albedo_color = Color(0, 0.695088, 0.110223, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_we8jo"]
+material = SubResource("StandardMaterial3D_xkcow")
+size = Vector2(100, 100)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7s8ka"]
+
 [node name="HuntingScene" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_fag3w")
 
 [node name="Bird" parent="." instance=ExtResource("1_dunje")]
 
 [node name="Mouse" parent="." instance=ExtResource("2_fag3w")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = SubResource("PlaneMesh_we8jo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_7s8ka")

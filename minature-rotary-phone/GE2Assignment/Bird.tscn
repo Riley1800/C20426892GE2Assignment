@@ -1,18 +1,25 @@
-[gd_scene load_steps=5 format=3 uid="uid://dm841dcgl4t1m"]
+[gd_scene load_steps=6 format=3 uid="uid://dm841dcgl4t1m"]
 
 [ext_resource type="PackedScene" uid="uid://ds03yqqhjsncb" path="res://GE2Assignment/BirdBody.tscn" id="1_nte10"]
 [ext_resource type="PackedScene" uid="uid://dah0ab8nybcqe" path="res://GE2Assignment/BirdWingLeft.tscn" id="2_s0wwx"]
 [ext_resource type="PackedScene" uid="uid://2pmbchtn58ox" path="res://GE2Assignment/BirdWingRight.tscn" id="3_jrhqa"]
 [ext_resource type="PackedScene" uid="uid://orx6t50fbm0g" path="res://GE2Assignment/BirdFoot.tscn" id="4_0lh1c"]
 
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_s0wwx"]
+
 [node name="Bird" type="Node3D"]
 
-[node name="BirdBody" parent="." instance=ExtResource("1_nte10")]
+[node name="Bird" type="CharacterBody3D" parent="."]
 
-[node name="BirdWingLeft" parent="." instance=ExtResource("2_s0wwx")]
+[node name="BirdBody" parent="Bird" instance=ExtResource("1_nte10")]
 
-[node name="BirdWingRight" parent="." instance=ExtResource("3_jrhqa")]
+[node name="BirdWingLeft" parent="Bird" instance=ExtResource("2_s0wwx")]
 
-[node name="BirdFootRight" parent="." instance=ExtResource("4_0lh1c")]
+[node name="BirdWingRight" parent="Bird" instance=ExtResource("3_jrhqa")]
 
-[node name="BirdFootLeft" parent="." instance=ExtResource("4_0lh1c")]
+[node name="BirdFootRight" parent="Bird" instance=ExtResource("4_0lh1c")]
+
+[node name="BirdFootLeft" parent="Bird" instance=ExtResource("4_0lh1c")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bird"]
+shape = SubResource("CylinderShape3D_s0wwx")

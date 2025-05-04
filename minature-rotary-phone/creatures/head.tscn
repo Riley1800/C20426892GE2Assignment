@@ -8,6 +8,6 @@ script = ExtResource("1_nu3gr")
 
 [node name="Harmonic" type="Node" parent="."]
 script = ExtResource("2_nu3gr")
-metadata/_custom_type_script = ExtResource("2_nu3gr")
+metadata/_custom_type_script = "uid://bctpwo8cerrgq"
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://r0205qumtxvr"]
+
+[ext_resource type="PackedScene" uid="uid://ba8rvhoabl0kn" path="res://GE2Assignment/MouseBody.tscn" id="1_2uawj"]
+[ext_resource type="PackedScene" uid="uid://cupp6rd76h0bs" path="res://GE2Assignment/MouseLimb.tscn" id="2_ssc7a"]
+[ext_resource type="PackedScene" uid="uid://hhlxfsdu6un2" path="res://GE2Assignment/MouseTail.tscn" id="3_hu1wn"]
+
+[node name="Mouse" type="Node3D"]
+
+[node name="MouseBody" parent="." instance=ExtResource("1_2uawj")]
+
+[node name="MouseFrontRight" parent="." instance=ExtResource("2_ssc7a")]
+
+[node name="MouseFrontLeft" parent="." instance=ExtResource("2_ssc7a")]
+
+[node name="MouseBackRight" parent="." instance=ExtResource("2_ssc7a")]
+
+[node name="MouseBackLeft" parent="." instance=ExtResource("2_ssc7a")]
+
+[node name="MouseTail" parent="." instance=ExtResource("3_hu1wn")]

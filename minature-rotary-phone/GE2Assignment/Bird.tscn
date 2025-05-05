@@ -1,9 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://dm841dcgl4t1m"]
+[gd_scene load_steps=7 format=3 uid="uid://dm841dcgl4t1m"]
 
 [ext_resource type="Script" uid="uid://o4qvhc5q2cx5" path="res://GE2Assignment/bird.gd" id="1_jrhqa"]
 [ext_resource type="PackedScene" uid="uid://ds03yqqhjsncb" path="res://GE2Assignment/BirdHead.tscn" id="1_nte10"]
-[ext_resource type="PackedScene" uid="uid://dah0ab8nybcqe" path="res://GE2Assignment/BirdWingLeft.tscn" id="2_s0wwx"]
-[ext_resource type="PackedScene" uid="uid://2pmbchtn58ox" path="res://GE2Assignment/BirdWingRight.tscn" id="3_jrhqa"]
+[ext_resource type="PackedScene" uid="uid://dah0ab8nybcqe" path="res://GE2Assignment/BirdWing.tscn" id="2_s0wwx"]
 [ext_resource type="PackedScene" uid="uid://orx6t50fbm0g" path="res://GE2Assignment/BirdFoot.tscn" id="4_0lh1c"]
 [ext_resource type="PackedScene" uid="uid://dhjiilqwt7y2v" path="res://GE2Assignment/BirdBody.tscn" id="6_0lh1c"]
 
@@ -17,10 +16,8 @@ script = ExtResource("1_jrhqa")
 [node name="BirdHead" parent="Bird" instance=ExtResource("1_nte10")]
 transform = Transform3D(-0.6, 0, -9.05975e-08, 0, 0.6, 0, 9.05975e-08, 0, -0.6, 0, 1.02293, 0)
 
-[node name="BirdWingLeft" parent="Bird" instance=ExtResource("2_s0wwx")]
-transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -0.0770602, 0.486953, -0.49939)
-
-[node name="BirdWingRight" parent="Bird" instance=ExtResource("3_jrhqa")]
+[node name="BirdWingRight" parent="Bird" instance=ExtResource("2_s0wwx")]
+transform = Transform3D(-2.62268e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.62268e-08, -0.0770602, 0.486953, -0.49939)
 
 [node name="BirdFootRight" parent="Bird" instance=ExtResource("4_0lh1c")]
 transform = Transform3D(-0.75, 0, -6.55671e-08, 0, 0.75, 0, 6.55671e-08, 0, -0.75, -0.0585605, -0.375631, -0.224536)
@@ -33,5 +30,5 @@ shape = SubResource("CylinderShape3D_s0wwx")
 
 [node name="BirdBody" parent="Bird" instance=ExtResource("6_0lh1c")]
 
-[node name="BirdWingLeft2" parent="Bird" instance=ExtResource("2_s0wwx")]
-transform = Transform3D(5.96244e-09, 0, -0.5, 0, 0.5, 0, 0.5, 0, 5.96244e-09, -0.0770602, 0.486953, 0.530177)
+[node name="BirdWingLeft" parent="Bird" instance=ExtResource("2_s0wwx")]
+transform = Transform3D(-2.62268e-08, 0, -0.6, 0, 0.6, 0, 0.6, 0, -2.62268e-08, -0.0770602, 0.486953, 0.530177)

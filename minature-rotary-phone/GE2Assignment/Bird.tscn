@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://dm841dcgl4t1m"]
 
 [ext_resource type="Script" uid="uid://o4qvhc5q2cx5" path="res://GE2Assignment/bird.gd" id="1_jrhqa"]
-[ext_resource type="PackedScene" uid="uid://ds03yqqhjsncb" path="res://GE2Assignment/BirdBody.tscn" id="1_nte10"]
+[ext_resource type="PackedScene" uid="uid://ds03yqqhjsncb" path="res://GE2Assignment/BirdHead.tscn" id="1_nte10"]
 [ext_resource type="PackedScene" uid="uid://dah0ab8nybcqe" path="res://GE2Assignment/BirdWingLeft.tscn" id="2_s0wwx"]
 [ext_resource type="PackedScene" uid="uid://2pmbchtn58ox" path="res://GE2Assignment/BirdWingRight.tscn" id="3_jrhqa"]
 [ext_resource type="PackedScene" uid="uid://orx6t50fbm0g" path="res://GE2Assignment/BirdFoot.tscn" id="4_0lh1c"]
@@ -22,6 +22,7 @@ script = ExtResource("1_jrhqa")
 [node name="BirdFootRight" parent="Bird" instance=ExtResource("4_0lh1c")]
 
 [node name="BirdFootLeft" parent="Bird" instance=ExtResource("4_0lh1c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.506229)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Bird"]
 shape = SubResource("CylinderShape3D_s0wwx")

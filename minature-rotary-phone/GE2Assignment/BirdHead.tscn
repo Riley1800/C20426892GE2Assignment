@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3 uid="uid://ds03yqqhjsncb"]
+
+[ext_resource type="Material" uid="uid://xufnqq5do2g1" path="res://GE2Assignment/BirdFeather.tres" id="1_c5fys"]
+[ext_resource type="Material" uid="uid://b803flqd3dywj" path="res://GE2Assignment/BeakColour.tres" id="2_aw6ba"]
+[ext_resource type="Material" uid="uid://diwssyhwwjjtw" path="res://GE2Assignment/IrisColour.tres" id="3_wa8u2"]
+
+[node name="BirdHead" type="Node3D"]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+
+[node name="LowerNeck" type="CSGSphere3D" parent="CSGCombiner3D"]
+material = ExtResource("1_c5fys")
+
+[node name="CentreFace" type="CSGCylinder3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.476335, 0)
+height = 0.812622
+material = ExtResource("1_c5fys")
+
+[node name="TopHead" type="CSGSphere3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.878341, 0)
+material = ExtResource("1_c5fys")
+
+[node name="TopBeak" type="CSGPolygon3D" parent="CSGCombiner3D"]
+transform = Transform3D(-0.440375, -0.0895953, 0.219186, -0.099684, 0.489962, 0, -0.214785, -0.0436986, -0.449397, -3.47856, -0.00589037, -1.94629)
+polygon = PackedVector2Array(-9.26137, -0.556258, -8.71875, -0.053943, -8.6304, -0.372446, -9.47245, -0.773236)
+depth = 0.46
+material = ExtResource("2_aw6ba")
+
+[node name="BottomBeak" type="CSGPolygon3D" parent="CSGCombiner3D"]
+transform = Transform3D(-0.464169, -0.0430597, -0.180812, 0.0461853, -0.497862, 0, -0.180039, -0.0167017, 0.466162, -3.77642, 0.615744, -1.3917)
+polygon = PackedVector2Array(-9.26137, -0.556258, -8.71875, -0.053943, -8.6304, -0.372446, -9.47245, -0.773236)
+depth = 0.46
+material = ExtResource("2_aw6ba")
+
+[node name="LeftEye" type="CSGSphere3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.496133, 0.868483, -0.0984572)
+radius = 0.0909993
+
+[node name="RightEye" type="CSGSphere3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.378686, 0.868483, 0.316295)
+radius = 0.0909993
+
+[node name="RightIris" type="CSGSphere3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.446287, 0.868483, 0.316295)
+radius = 0.0417224
+material = ExtResource("3_wa8u2")
+
+[node name="LeftIris" type="CSGSphere3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.572759, 0.868483, -0.0776143)
+radius = 0.0417224
+material = ExtResource("3_wa8u2")

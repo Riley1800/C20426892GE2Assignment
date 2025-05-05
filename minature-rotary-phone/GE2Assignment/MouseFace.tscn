@@ -1,0 +1,68 @@
+[gd_scene load_steps=4 format=3 uid="uid://c4ias84krrst5"]
+
+[ext_resource type="Material" uid="uid://cjd1j5wjakm2h" path="res://GE2Assignment/MouseSkin.tres" id="1_3etsv"]
+[ext_resource type="Material" uid="uid://cce10rim66wl1" path="res://GE2Assignment/MouseNose.tres" id="2_p3oai"]
+[ext_resource type="Material" uid="uid://diwssyhwwjjtw" path="res://GE2Assignment/IrisColour.tres" id="3_g7v83"]
+
+[node name="MouseFace" type="Node3D"]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+
+[node name="FaceShape" type="CSGSphere3D" parent="CSGCombiner3D"]
+material = ExtResource("1_3etsv")
+
+[node name="NoseStem" type="CSGCylinder3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0.6)
+radius = 0.152344
+height = 0.291229
+material = ExtResource("1_3etsv")
+
+[node name="NoseTip" type="CSGSphere3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.75)
+radius = 0.155496
+material = ExtResource("2_p3oai")
+
+[node name="LeftEar" type="CSGTorus3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.360362, 0.420823, -0.0191461)
+inner_radius = 0.274882
+outer_radius = 0.001
+material = ExtResource("1_3etsv")
+
+[node name="RightEar" type="CSGTorus3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.393645, 0.420823, -0.0191461)
+inner_radius = 0.274882
+outer_radius = 0.001
+material = ExtResource("1_3etsv")
+
+[node name="RightEye" type="CSGSphere3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.182541, 0.180957, 0.374323)
+radius = 0.115829
+
+[node name="LeftEye" type="CSGSphere3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.191211, 0.180957, 0.374323)
+radius = 0.115829
+
+[node name="RightIris" type="CSGSphere3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.175272, 0.180957, 0.467307)
+radius = 0.0528029
+material = ExtResource("3_g7v83")
+
+[node name="LeftIris" type="CSGSphere3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.205469, 0.180957, 0.466817)
+radius = 0.0528029
+material = ExtResource("3_g7v83")
+
+[node name="NoseTipHoleRight" type="CSGSphere3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0849578, -0.015034, 0.860503)
+operation = 2
+radius = 0.0556736
+
+[node name="NoseTipHoleLeft" type="CSGSphere3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0974457, -0.015034, 0.860503)
+operation = 2
+radius = 0.0556736
+
+[node name="MouthHole" type="CSGSphere3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000691727, -0.258373, 0.415517)
+operation = 2
+radius = 0.0556736

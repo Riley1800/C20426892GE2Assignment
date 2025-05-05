@@ -22,6 +22,7 @@ script = ExtResource("1_jrhqa")
 [node name="BirdFootRight" parent="Bird" instance=ExtResource("4_0lh1c")]
 
 [node name="BirdFootLeft" parent="Bird" instance=ExtResource("4_0lh1c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.157832)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Bird"]
 shape = SubResource("CylinderShape3D_s0wwx")

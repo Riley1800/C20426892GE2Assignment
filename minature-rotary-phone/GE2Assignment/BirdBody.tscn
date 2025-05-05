@@ -1,3 +1,14 @@
 [gd_scene format=3 uid="uid://ds03yqqhjsncb"]
 
 [node name="BirdBody" type="Node3D"]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+
+[node name="LowerAbdomen" type="CSGSphere3D" parent="CSGCombiner3D"]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00951844, 0.241598, 0)
+height = 0.516479
+
+[node name="LowerAbdomen2" type="CSGSphere3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.472753, 0)

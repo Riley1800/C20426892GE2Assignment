@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://dhjiilqwt7y2v"]
+
+[ext_resource type="Material" uid="uid://xufnqq5do2g1" path="res://GE2Assignment/BirdFeather.tres" id="1_k0wir"]
+
+[node name="BirdBody" type="Node3D"]
+
+[node name="MainTorso" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.657166, 0)
+radius = 0.3125
+height = 0.685669
+material = ExtResource("1_k0wir")
+
+[node name="TailFeathers" type="CSGPolygon3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.0513234, 0.291366, 0.241207)
+polygon = PackedVector2Array(0, 0, 0, 1, 0.481949, 0.455223, 1, 0)
+material = ExtResource("1_k0wir")
+
+[node name="TorsoBase" type="CSGSphere3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.337031, 0)
+radius = 0.314879
+material = ExtResource("1_k0wir")

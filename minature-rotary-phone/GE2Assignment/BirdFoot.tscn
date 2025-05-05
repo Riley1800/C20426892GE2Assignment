@@ -5,9 +5,9 @@
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGCombiner3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.532309, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.615558, 0)
 radius = 0.0541992
-height = 0.223267
+height = 0.4
 
 [node name="CSGCylinder3D2" type="CSGCylinder3D" parent="CSGCombiner3D"]
 transform = Transform3D(0.0434974, 0.999054, 0, -0.999054, 0.0434974, 0, 0, 0, 1, 0.071121, 0.461017, 0.00106785)

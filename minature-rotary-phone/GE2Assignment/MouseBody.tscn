@@ -1,4 +1,7 @@
-[gd_scene format=3 uid="uid://ba8rvhoabl0kn"]
+[gd_scene load_steps=3 format=3 uid="uid://ba8rvhoabl0kn"]
+
+[ext_resource type="Material" uid="uid://cjd1j5wjakm2h" path="res://GE2Assignment/MouseSkin.tres" id="1_a3akq"]
+[ext_resource type="PackedScene" uid="uid://c4ias84krrst5" path="res://GE2Assignment/MouseFace.tscn" id="2_lh10n"]
 
 [node name="MouseBody" type="Node3D"]
 
@@ -7,6 +10,15 @@
 [node name="MainTorso" type="CSGCylinder3D" parent="CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 6.32833e-09, -0.144775)
 height = 1.71045
+material = ExtResource("1_a3akq")
 
 [node name="RearTorso" type="CSGSphere3D" parent="CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.75)
+material = ExtResource("1_a3akq")
+
+[node name="MouseFace" parent="CSGCombiner3D" instance=ExtResource("2_lh10n")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.41077, -1.24792)
+
+[node name="Neck" type="CSGSphere3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.875152)
+material = ExtResource("1_a3akq")

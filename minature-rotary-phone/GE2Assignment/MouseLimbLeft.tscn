@@ -1,0 +1,73 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddxeropad6fh2"]
+
+[ext_resource type="Material" uid="uid://cjd1j5wjakm2h" path="res://GE2Assignment/MouseSkin.tres" id="1_qir7q"]
+
+[node name="MouseLimb" type="Node3D"]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.84448, 0)
+radius = 0.419434
+height = 1.38672
+material = ExtResource("1_qir7q")
+
+[node name="CSGTorus3D" type="CSGTorus3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.845211, 0.115788)
+inner_radius = 0.001
+outer_radius = 0.707103
+material = ExtResource("1_qir7q")
+
+[node name="CSGCylinder3D5" type="CSGCylinder3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.375706, 0.759143, 0.756595)
+radius = 0.13623
+height = 0.449632
+material = ExtResource("1_qir7q")
+
+[node name="CSGCylinder3D6" type="CSGCylinder3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.125916, 0.763886, 0.756595)
+radius = 0.13623
+height = 0.449632
+material = ExtResource("1_qir7q")
+
+[node name="CSGCylinder3D7" type="CSGCylinder3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.174944, 0.768616, 0.756595)
+radius = 0.13623
+height = 0.449632
+material = ExtResource("1_qir7q")
+
+[node name="CSGCylinder3D8" type="CSGCylinder3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.39234, 0.768445, 0.756595)
+radius = 0.13623
+height = 0.449632
+material = ExtResource("1_qir7q")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.352463, 0.750231, 0.963608)
+radius = 0.166036
+material = ExtResource("1_qir7q")
+
+[node name="CSGSphere3D2" type="CSGSphere3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.403761, 0.750231, 0.963608)
+radius = 0.166036
+material = ExtResource("1_qir7q")
+
+[node name="CSGSphere3D3" type="CSGSphere3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.192212, 0.750231, 0.963608)
+radius = 0.166036
+material = ExtResource("1_qir7q")
+
+[node name="CSGSphere3D4" type="CSGSphere3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.115166, 0.750231, 0.963608)
+radius = 0.166036
+material = ExtResource("1_qir7q")
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="CSGCombiner3D"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -0.321846, 2.87007, 0)
+height = 1.12109
+material = ExtResource("1_qir7q")
+
+[node name="CSGSphere3D5" type="CSGSphere3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00163323, 2.85867, 0)
+radius = 0.547777
+material = ExtResource("1_qir7q")

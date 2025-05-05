@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://orx6t50fbm0g"]
+[gd_scene load_steps=2 format=3 uid="uid://orx6t50fbm0g"]
+
+[ext_resource type="Material" uid="uid://bt0adkq20sct7" path="res://GE2Assignment/Feet.tres" id="1_1vbvf"]
 
 [node name="BirdFoot" type="Node3D"]
 
@@ -8,18 +10,22 @@
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.615558, 0)
 radius = 0.0541992
 height = 0.4
+material = ExtResource("1_1vbvf")
 
 [node name="CSGCylinder3D2" type="CSGCylinder3D" parent="CSGCombiner3D"]
 transform = Transform3D(0.0434974, 0.999054, 0, -0.999054, 0.0434974, 0, 0, 0, 1, 0.071121, 0.461017, 0.00106785)
 radius = 0.046875
 height = 0.330688
+material = ExtResource("1_1vbvf")
 
 [node name="CSGCylinder3D3" type="CSGCylinder3D" parent="CSGCombiner3D"]
 transform = Transform3D(0.0282125, 0.646174, -0.762668, -0.999048, 0.0436193, 0, 0.0332671, 0.761943, 0.64679, 0.0792807, 0.461017, 0.0670512)
 radius = 0.046875
 height = 0.330688
+material = ExtResource("1_1vbvf")
 
 [node name="CSGCylinder3D4" type="CSGCylinder3D" parent="CSGCombiner3D"]
 transform = Transform3D(0.0282125, 0.646174, 0.762668, -0.999048, 0.0436193, 0, -0.0332671, -0.761943, 0.64679, 0.071121, 0.461017, -0.0929521)
 radius = 0.046875
 height = 0.330688
+material = ExtResource("1_1vbvf")

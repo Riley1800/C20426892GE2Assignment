@@ -1,3 +1,30 @@
-[gd_scene format=3 uid="uid://hhlxfsdu6un2"]
+[gd_scene load_steps=2 format=3 uid="uid://hhlxfsdu6un2"]
+
+[ext_resource type="Material" uid="uid://cce10rim66wl1" path="res://GE2Assignment/MouseNose.tres" id="1_ud8b1"]
 
 [node name="MouseTail" type="Node3D"]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.73579, 0)
+radius = 0.115234
+height = 0.670898
+material = ExtResource("1_ud8b1")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.35407, 0)
+radius = 0.126132
+material = ExtResource("1_ud8b1")
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="CSGCombiner3D"]
+transform = Transform3D(0.99559, -0.0938129, 0, 0.0938129, 0.99559, 0, 0, 0, 1, -0.0287963, 3.36542, 0)
+radius = 0.115234
+height = 0.670898
+material = ExtResource("1_ud8b1")
+
+[node name="CSGCylinder3D5" type="CSGCylinder3D" parent="CSGCombiner3D"]
+transform = Transform3D(0.99573, 0.0923185, 0, -0.0923185, 0.99573, 0, 0, 0, 1, -0.0287963, 4.00387, 0)
+radius = 0.115234
+height = 0.670898
+material = ExtResource("1_ud8b1")

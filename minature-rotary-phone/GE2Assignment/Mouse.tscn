@@ -22,6 +22,7 @@ shape = SubResource("CapsuleShape3D_ssc7a")
 transform = Transform3D(-0.4, 0, -3.49691e-08, 0, 0.4, 0, 3.49691e-08, 0, -0.4, 0.630052, -1.06449, -0.574526)
 
 [node name="MouseTail" parent="Mouse" instance=ExtResource("3_hu1wn")]
+transform = Transform3D(1, 0, 0, 0, 0.528157, -0.849147, 0, 0.849147, 0.528157, 0.0659304, -1.2827, -0.950318)
 
 [node name="MouseBackRight" parent="Mouse" instance=ExtResource("2_ssc7a")]
 transform = Transform3D(-0.4, 0, -3.49691e-08, 0, 0.4, 0, 3.49691e-08, 0, -0.4, 0.630052, -1.06449, 0.446513)

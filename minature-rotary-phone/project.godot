@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Minature Rotary Phone"
-run/main_scene="uid://dmi1o12psjnub"
+run/main_scene="uid://bs1n6h55ks4dl"
 config/features=PackedStringArray("4.4")
 config/icon="res://behaviors/icon.png"
 

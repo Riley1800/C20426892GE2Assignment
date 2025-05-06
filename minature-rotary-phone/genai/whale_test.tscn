@@ -72,7 +72,7 @@ material = SubResource("StandardMaterial3D_body")
 
 [node name="Wander" type="Node" parent="Whale/Head/boid"]
 script = ExtResource("4_fxeey")
-metadata/_custom_type_script = ExtResource("4_fxeey")
+metadata/_custom_type_script = "uid://baw56rnhj0aqm"
 
 [node name="Avoidance" type="Node" parent="Whale/Head/boid"]
 script = ExtResource("5_r3f3w")
@@ -96,7 +96,6 @@ draw_gizmos = false
 
 [node name="PathFollow3D" type="Node" parent="Whale/Head/boid"]
 script = ExtResource("15_ffbcd")
-path_path = NodePath("../../../Path3D")
 waypoint_seek_distance = 5
 weight = 3.0
 

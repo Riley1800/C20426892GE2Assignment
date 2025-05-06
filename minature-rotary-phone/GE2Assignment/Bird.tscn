@@ -15,9 +15,6 @@ radius = 1.11621
 [node name="Bird" type="CharacterBody3D" parent="."]
 script = ExtResource("1_jrhqa")
 
-[node name="BirdHead" parent="Bird" instance=ExtResource("1_nte10")]
-transform = Transform3D(-0.6, 0, -9.05975e-08, 0, 0.6, 0, 9.05975e-08, 0, -0.6, 0, 1.02293, 0)
-
 [node name="BirdWingRight" parent="Bird" instance=ExtResource("2_s0wwx")]
 transform = Transform3D(-2.62268e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.62268e-08, -0.0770602, 0.486953, -0.49939)
 
@@ -35,3 +32,6 @@ shape = SubResource("CylinderShape3D_s0wwx")
 
 [node name="BirdWingLeft" parent="Bird" instance=ExtResource("2_s0wwx")]
 transform = Transform3D(-2.62268e-08, 0, -0.6, 0, 0.6, 0, 0.6, 0, -2.62268e-08, -0.0770602, 0.486953, 0.530177)
+
+[node name="BirdHead" parent="Bird" instance=ExtResource("1_nte10")]
+transform = Transform3D(-0.6, 0, -9.05975e-08, 0, 0.6, 0, 9.05975e-08, 0, -0.6, 0, 1.02293, 0)

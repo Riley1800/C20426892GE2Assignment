@@ -29,8 +29,10 @@ environment = SubResource("Environment_fag3w")
 [node name="Bird" parent="." instance=ExtResource("1_dunje")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0765135, 0)
 
+[node name="Camera3D" type="Camera3D" parent="Bird"]
+
 [node name="Mouse" parent="." instance=ExtResource("2_fag3w")]
-transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -3.45658, 0.142359, -0.940036)
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -3.45658, 0.249776, -0.940036)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 

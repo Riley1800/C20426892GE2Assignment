@@ -20,8 +20,6 @@ far = 10000.0
 
 [node name="AudioListener3D" type="AudioListener3D" parent="Camera3D"]
 
-[node name="Camera3D Controller" type="Node" parent="Camera3D" node_paths=PackedStringArray("boid_player", "boid")]
+[node name="Camera3D Controller" type="Node" parent="Camera3D"]
 script = ExtResource("3_hu8t5")
-boid_player = NodePath("")
-boid = NodePath("")
 mode = 1

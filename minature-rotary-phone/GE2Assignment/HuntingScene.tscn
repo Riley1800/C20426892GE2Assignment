@@ -1,18 +1,23 @@
-[gd_scene load_steps=10 format=3 uid="uid://bs1n6h55ks4dl"]
+[gd_scene load_steps=13 format=3 uid="uid://bs1n6h55ks4dl"]
 
 [ext_resource type="PackedScene" uid="uid://dm841dcgl4t1m" path="res://GE2Assignment/Bird.tscn" id="1_dunje"]
 [ext_resource type="Script" uid="uid://ca5t0med2fk0n" path="res://GE2Assignment/hunting_scene.gd" id="1_fag3w"]
 [ext_resource type="PackedScene" uid="uid://r0205qumtxvr" path="res://GE2Assignment/Mouse.tscn" id="2_fag3w"]
 [ext_resource type="PackedScene" uid="uid://c7rubewuhrpnq" path="res://ui_layer.tscn" id="4_xkcow"]
+[ext_resource type="Script" uid="uid://do7ve6cbht2yv" path="res://behaviors/Controller.gd" id="5_we8jo"]
+[ext_resource type="PackedScene" uid="uid://dc24oh4o5erhi" path="res://behaviors/SceneSwitcher.tscn" id="6_7s8ka"]
 
-[sub_resource type="Sky" id="Sky_dunje"]
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7s8ka"]
+ground_energy_multiplier = 2.0
 
-[sub_resource type="Environment" id="Environment_fag3w"]
-resource_local_to_scene = true
+[sub_resource type="Sky" id="Sky_tijr4"]
+sky_material = SubResource("ProceduralSkyMaterial_7s8ka")
+
+[sub_resource type="Environment" id="Environment_7s8ka"]
 background_mode = 2
-sky = SubResource("Sky_dunje")
-tonemap_mode = 2
-glow_enabled = true
+background_energy_multiplier = 2.18
+sky = SubResource("Sky_tijr4")
+ambient_light_color = Color(0.942823, 0.942823, 0.942823, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xkcow"]
 albedo_color = Color(0, 0.695088, 0.110223, 1)
@@ -27,13 +32,10 @@ size = Vector2(100, 100)
 script = ExtResource("1_fag3w")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_fag3w")
+environment = SubResource("Environment_7s8ka")
 
 [node name="Bird" parent="." instance=ExtResource("1_dunje")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0765135, 0)
-
-[node name="Camera3D" type="Camera3D" parent="Bird"]
-transform = Transform3D(0.0812253, 0, 0.996696, 0, 1, 0, -0.996696, 0, 0.0812253, 6.42263, 1.07908, 5.53937)
 
 [node name="Mouse" parent="." instance=ExtResource("2_fag3w")]
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -3.45658, 0.249776, -0.940036)
@@ -46,4 +48,50 @@ mesh = SubResource("PlaneMesh_we8jo")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 shape = SubResource("BoxShape3D_7s8ka")
 
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.0812253, 0, 0.996696, 0, 1, 0, -0.996696, 0, 0.0812253, 6.64823, 1.15559, 1.39634)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.401964, -0.915656, 0, 0.915656, -0.401964, 0, -0.505352, 0)
+shadow_enabled = true
+
 [node name="ui_layer" parent="." instance=ExtResource("4_xkcow")]
+show_camera_mode = true
+
+[node name="Control" parent="ui_layer" index="0"]
+script = ExtResource("5_we8jo")
+
+[node name="MarginContainer" parent="ui_layer/Control" index="0"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -165.0
+offset_right = 440.0
+offset_bottom = 198.0
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.0
+
+[node name="Label" parent="ui_layer/Control/MarginContainer" index="0"]
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Dist:"
+
+[node name="MarginContainer2" parent="ui_layer/Control" index="1"]
+anchors_preset = 2
+anchor_left = 0.0
+anchor_right = 0.0
+offset_left = 0.0
+offset_top = -213.0
+offset_right = 408.0
+grow_horizontal = 1
+
+[node name="Label" parent="ui_layer/Control/MarginContainer2" index="0"]
+text = "F:Full screen
+C: Camera Mode 
+0-9 : Change scene
+Q: Quit "
+
+[node name="SceneSwitcher" parent="." instance=ExtResource("6_7s8ka")]
+
+[editable path="ui_layer"]

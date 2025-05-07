@@ -1,7 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://bs1n6h55ks4dl"]
+[gd_scene load_steps=10 format=3 uid="uid://bs1n6h55ks4dl"]
 
 [ext_resource type="PackedScene" uid="uid://dm841dcgl4t1m" path="res://GE2Assignment/Bird.tscn" id="1_dunje"]
+[ext_resource type="Script" uid="uid://ca5t0med2fk0n" path="res://GE2Assignment/hunting_scene.gd" id="1_fag3w"]
 [ext_resource type="PackedScene" uid="uid://r0205qumtxvr" path="res://GE2Assignment/Mouse.tscn" id="2_fag3w"]
+[ext_resource type="PackedScene" uid="uid://c7rubewuhrpnq" path="res://ui_layer.tscn" id="4_xkcow"]
 
 [sub_resource type="Sky" id="Sky_dunje"]
 
@@ -22,6 +24,7 @@ size = Vector2(100, 100)
 [sub_resource type="BoxShape3D" id="BoxShape3D_7s8ka"]
 
 [node name="HuntingScene" type="Node3D"]
+script = ExtResource("1_fag3w")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_fag3w")
@@ -30,6 +33,7 @@ environment = SubResource("Environment_fag3w")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0765135, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Bird"]
+transform = Transform3D(0.0812253, 0, 0.996696, 0, 1, 0, -0.996696, 0, 0.0812253, 6.42263, 1.07908, 5.53937)
 
 [node name="Mouse" parent="." instance=ExtResource("2_fag3w")]
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -3.45658, 0.249776, -0.940036)
@@ -41,3 +45,5 @@ mesh = SubResource("PlaneMesh_we8jo")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 shape = SubResource("BoxShape3D_7s8ka")
+
+[node name="ui_layer" parent="." instance=ExtResource("4_xkcow")]

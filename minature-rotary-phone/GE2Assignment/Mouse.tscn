@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://r0205qumtxvr"]
+[gd_scene load_steps=8 format=3 uid="uid://r0205qumtxvr"]
 
 [ext_resource type="PackedScene" uid="uid://ba8rvhoabl0kn" path="res://GE2Assignment/MouseBody.tscn" id="1_2uawj"]
 [ext_resource type="Script" uid="uid://dt42ofsg1yqj2" path="res://GE2Assignment/mouse.gd" id="1_hu1wn"]
 [ext_resource type="PackedScene" uid="uid://cupp6rd76h0bs" path="res://GE2Assignment/MouseLimbRight.tscn" id="2_ssc7a"]
 [ext_resource type="PackedScene" uid="uid://hhlxfsdu6un2" path="res://GE2Assignment/MouseTail.tscn" id="3_hu1wn"]
+[ext_resource type="Script" uid="uid://vt0dl71ofl2n" path="res://GE2Assignment/mouse_tail.gd" id="5_8iv04"]
 [ext_resource type="PackedScene" uid="uid://ddxeropad6fh2" path="res://GE2Assignment/MouseLimbLeft.tscn" id="5_tfmb7"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ssc7a"]
@@ -23,6 +24,7 @@ transform = Transform3D(-0.4, 0, -3.49691e-08, 0, 0.4, 0, 3.49691e-08, 0, -0.4, 
 
 [node name="MouseTail" parent="Mouse" instance=ExtResource("3_hu1wn")]
 transform = Transform3D(1, 0, 0, 0, 0.528157, -0.849147, 0, 0.849147, 0.528157, 0.0659304, -1.2827, -0.950318)
+script = ExtResource("5_8iv04")
 
 [node name="MouseBackRight" parent="Mouse" instance=ExtResource("2_ssc7a")]
 transform = Transform3D(-0.4, 0, -3.49691e-08, 0, 0.4, 0, 3.49691e-08, 0, -0.4, 0.630052, -1.06449, 0.446513)

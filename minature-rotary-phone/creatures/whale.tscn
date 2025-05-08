@@ -12,7 +12,7 @@
 [node name="SpineAnimator" type="Node" parent="creature" node_paths=PackedStringArray("bones")]
 script = ExtResource("1_kuoxj")
 bones = [NodePath("../boid"), NodePath("../CSGBox3D"), NodePath("../CSGBox3D2"), NodePath("../CSGBox3D3"), NodePath("../CSGBox3D4"), NodePath("../CSGPolygon3D")]
-metadata/_custom_type_script = ExtResource("1_kuoxj")
+metadata/_custom_type_script = "uid://bb475dsswmiyu"
 
 [node name="boid" type="CharacterBody3D" parent="creature"]
 script = ExtResource("1_iuyin")
@@ -26,7 +26,7 @@ spin_sides = 8
 
 [node name="Harmonic" type="Node" parent="creature/boid"]
 script = ExtResource("3_347xv")
-metadata/_custom_type_script = ExtResource("3_347xv")
+metadata/_custom_type_script = "uid://bctpwo8cerrgq"
 
 [node name="CSGBox3D" type="CSGBox3D" parent="creature"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.13564)

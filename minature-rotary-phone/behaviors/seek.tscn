@@ -161,19 +161,6 @@ shape = SubResource("14")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.8709, 0, 0)
 script = ExtResource("12")
 
-[node name="cobramk3" parent="Ship"]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-transform = Transform3D(200, 0, 0, 0, 200, 0, 0, 0, 200, 0, 0, 0)
-script = null
-
 [node name="Seek" type="Node" parent="Ship" node_paths=PackedStringArray("target")]
 script = ExtResource("15")
 target = NodePath("../../ShipTarget")

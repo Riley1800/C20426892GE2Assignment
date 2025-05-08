@@ -30,7 +30,7 @@ func _physics_process(delta: float) -> void:
 	velocity = _velocity  # Assign to CharacterBody3D's built-in velocity
 	move_and_slide()
 	_animate_wings(delta)
-	_rotate_to_velocity(delta)
+	#_rotate_to_velocity(delta)
 
 # --- BEHAVIORS ---
 func seek(target_pos: Vector3) -> Vector3:

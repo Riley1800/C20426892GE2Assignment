@@ -15,6 +15,8 @@ extends CharacterBody3D
 var _velocity := Vector3(0, 0, -1) * max_speed
 var _wander_angle := 3.0
 
+
+
 func _physics_process(delta: float) -> void:
 	# Choose behavior (uncomment one):
 	var steering := wander(delta)          # Random wandering

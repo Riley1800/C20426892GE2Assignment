@@ -35,7 +35,7 @@ script = ExtResource("1_fag3w")
 environment = SubResource("Environment_7s8ka")
 
 [node name="Bird" parent="." instance=ExtResource("1_dunje")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0765135, 0)
+transform = Transform3D(0.348969, -0.765742, 0.54024, 0.909961, 0.414693, 0, -0.224034, 0.491598, 0.841511, 0, 1.36767, 0)
 
 [node name="Mouse" parent="." instance=ExtResource("2_fag3w")]
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -3.45658, 0.249776, -0.940036)

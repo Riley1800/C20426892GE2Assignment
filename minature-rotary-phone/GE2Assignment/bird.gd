@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
 # Movement settings
-@export var max_speed := 5.0
+@export var max_speed := 3.0
 @export var max_force := 0.3
 @export var wander_radius := 2.0
 
@@ -12,8 +12,8 @@ extends CharacterBody3D
 @export var left_wing: CSGBox3D
 @export var right_wing: CSGBox3D
 
-var _velocity := Vector3.FORWARD * max_speed
-var _wander_angle := 0.0
+var _velocity := Vector3(0, 0, -1) * max_speed
+var _wander_angle := 3.0
 
 func _physics_process(delta: float) -> void:
 	# Choose behavior (uncomment one):

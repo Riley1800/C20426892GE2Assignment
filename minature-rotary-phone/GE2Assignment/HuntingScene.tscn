@@ -28,6 +28,7 @@ material = SubResource("StandardMaterial3D_xkcow")
 size = Vector2(100, 100)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7s8ka"]
+size = Vector3(101.424, 1, 102.527)
 
 [node name="HuntingScene" type="Node3D"]
 script = ExtResource("1_fag3w")
@@ -53,6 +54,7 @@ transform = Transform3D(3.33333, 0, 0, 0, 3.33333, 0, 0, 0, 3.33333, 0, 0, 0)
 mesh = SubResource("PlaneMesh_we8jo")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.190186, -0.460566, -0.907074)
 shape = SubResource("BoxShape3D_7s8ka")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
@@ -111,7 +113,7 @@ script = ExtResource("3_tijr4")
 script = ExtResource("7_tijr4")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.78713, 15.9361)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.95932, 12.7233, 42.7484)
 current = true
 
 [editable path="ui_layer"]

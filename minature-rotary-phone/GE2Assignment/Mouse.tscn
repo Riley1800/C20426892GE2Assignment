@@ -8,13 +8,17 @@
 [ext_resource type="PackedScene" uid="uid://ddxeropad6fh2" path="res://GE2Assignment/MouseLimbLeft.tscn" id="5_tfmb7"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ssc7a"]
+radius = 1.48389
+height = 4.4377
 
 [node name="Mouse" type="Node3D"]
 
 [node name="Mouse" type="CharacterBody3D" parent="."]
 script = ExtResource("1_hu1wn")
+flee_range = 24.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Mouse"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.200413, 0)
 shape = SubResource("CapsuleShape3D_ssc7a")
 
 [node name="MouseBody" parent="Mouse" instance=ExtResource("1_2uawj")]

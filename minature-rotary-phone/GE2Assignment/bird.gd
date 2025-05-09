@@ -1,15 +1,15 @@
 extends CharacterBody3D
 
 @export var target: Node3D  # The mouse target we want to follow
-var force: Vector3 = Vector3.ZERO  # Initialize force as zero
-var mass: float = 1.0  # Default mass
+var force: Vector3 = Vector3.ZERO  
+var mass: float = 1.0  
 
 # Maximum speed
 @export var max_speed: float = 10.0
 
 func _ready():
 	# Access the parent scene (HuntingScene)
-	var hunting_scene = get_tree().root.get_node("HuntingScene")  # Adjust path to "HuntingScene"
+	var hunting_scene = get_tree().root.get_node("HuntingScene")  
 	
 	if hunting_scene == null:
 		print("ERROR: HuntingScene not found!")

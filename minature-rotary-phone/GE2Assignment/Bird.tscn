@@ -13,10 +13,8 @@ radius = 1.11621
 
 [node name="Bird" type="Node3D"]
 
-[node name="Bird" type="CharacterBody3D" parent="." node_paths=PackedStringArray("left_wing", "right_wing")]
+[node name="Bird" type="CharacterBody3D" parent="."]
 script = ExtResource("1_jrhqa")
-left_wing = NodePath("BirdWingLeft")
-right_wing = NodePath("BirdWingRight")
 
 [node name="BirdWingRight" parent="Bird" instance=ExtResource("2_s0wwx")]
 transform = Transform3D(-2.62268e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.62268e-08, -0.0770602, 0.486953, -0.49939)

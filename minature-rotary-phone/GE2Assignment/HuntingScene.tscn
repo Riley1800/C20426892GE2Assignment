@@ -45,6 +45,7 @@ script = ExtResource("3_tijr4")
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -3.45658, 0.249776, -0.940036)
 
 [node name="MouseCamera" type="Camera3D" parent="Mouse"]
+current = true
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 

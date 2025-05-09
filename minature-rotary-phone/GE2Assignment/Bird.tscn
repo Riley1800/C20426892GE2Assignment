@@ -15,6 +15,7 @@ radius = 1.11621
 
 [node name="Bird" type="CharacterBody3D" parent="."]
 script = ExtResource("1_jrhqa")
+max_speed = 3.0
 
 [node name="BirdWingRight" parent="Bird" instance=ExtResource("2_s0wwx")]
 transform = Transform3D(-2.62268e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.62268e-08, -0.0770602, 0.486953, -0.49939)

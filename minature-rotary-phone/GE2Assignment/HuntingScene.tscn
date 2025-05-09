@@ -36,7 +36,7 @@ script = ExtResource("1_fag3w")
 environment = SubResource("Environment_7s8ka")
 
 [node name="Bird" parent="." instance=ExtResource("1_dunje")]
-transform = Transform3D(0.348969, -0.765742, 0.54024, 0.909961, 0.414693, 0, -0.224034, 0.491598, 0.841511, 0, 1.36767, 0)
+transform = Transform3D(0.348969, -0.765742, 0.54024, 0.909961, 0.414693, 0, -0.224034, 0.491598, 0.841511, 9.66476, 11.8273, 0)
 
 [node name="BirdCamera" type="Camera3D" parent="Bird"]
 script = ExtResource("3_tijr4")
@@ -45,7 +45,7 @@ script = ExtResource("3_tijr4")
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -3.45658, 0.249776, -0.940036)
 
 [node name="MouseCamera" type="Camera3D" parent="Mouse"]
-current = true
+transform = Transform3D(3.33333, 0, 0, 0, 3.33333, 0, 0, 0, 3.33333, 0, 0, 0)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
@@ -96,18 +96,22 @@ C: Camera Mode
 Q: Quit "
 
 [node name="Bird2" parent="." instance=ExtResource("1_dunje")]
-transform = Transform3D(0.348969, -0.765742, 0.54024, 0.909961, 0.414693, 0, -0.224034, 0.491598, 0.841511, 7.65575, 1.36767, 0)
+transform = Transform3D(0.348969, -0.765742, 0.54024, 0.909961, 0.414693, 0, -0.224034, 0.491598, 0.841511, 14.7357, 9.77026, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Bird2"]
 script = ExtResource("3_tijr4")
 
 [node name="Bird3" parent="." instance=ExtResource("1_dunje")]
-transform = Transform3D(0.348969, -0.765742, 0.54024, 0.909961, 0.414693, 0, -0.224034, 0.491598, 0.841511, 0, 1.36767, -6.74608)
+transform = Transform3D(0.348969, -0.765742, 0.54024, 0.909961, 0.414693, 0, -0.224034, 0.491598, 0.841511, 14.0262, 8.52158, 11.4347)
 
 [node name="Camera3D" type="Camera3D" parent="Bird3"]
 script = ExtResource("3_tijr4")
 
 [node name="CameraManager" type="Node" parent="."]
 script = ExtResource("7_tijr4")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.78713, 15.9361)
+current = true
 
 [editable path="ui_layer"]

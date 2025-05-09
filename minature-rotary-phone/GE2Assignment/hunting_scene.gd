@@ -20,7 +20,7 @@ func _ready():
 	DebugDraw2D.config.text_default_size = text_size
 	DebugDraw2D.config.text_background_color = Color.TRANSPARENT
 	
-	get_window().set_current_screen(1)
+#	get_window().set_current_screen(1)
 	
 	# Create FPS graph
 	var fps_graph = _create_fps_graph(

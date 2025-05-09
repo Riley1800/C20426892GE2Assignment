@@ -1,7 +1,7 @@
 extends CanvasLayer
 
 # Node References
-@onready var cam_controller: CameraController = $"../Camera3D/Camera3D Controller"
+@onready var cam_controller = get_node("../CameraManager")
 @onready var label: Label = $Control/MarginContainer2/Label
 
 # Debug Display Configuration

@@ -5,20 +5,10 @@ extends Node
 # var a = 2
 # var b = "text"
 var harmonic
-@onready var direction = get_node("GridContainer2/OptionButton")
 # Called when the node enters the scene tree for the first time.
 func _r667eady():
 	harmonic =  get_node("../../creature/boid/Harmonic")
-	direction.add_item("Horizontal")
-	direction.add_item("Vertical")
-	$GridContainer2/distance.value = harmonic.distance
-	$GridContainer2/radius.value = harmonic.radius
-	$GridContainer2/amplitude.value = harmonic.amplitude
-	$GridContainer2/Frequency.value = harmonic.frequency
-	$GridContainer2/weight.value = harmonic.weight
 	
-	$GridContainer2/damping.value = $"../../creature/spineanimator".damping
-	$GridContainer2/angularDamping.value = $"../../creature/spineanimator".damping
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

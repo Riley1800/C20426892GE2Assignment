@@ -15,6 +15,9 @@ Import the project to the godot game engine using the project.godot file. Once s
 # How it works
 The main scene of the project is HuntingScene.tcsn which houses the other scenes. It also facilitates the creation of the world environment and world floor.Established here is also the primary camera used for visualisation throughout the simulation. Added here also is an instance of the Mouse scene and 3 instances of the bird scene named bird, bird2, bird3. The birds are instantiated from bird.tcsn which is a nested scene that contains the building of the model of the bird and its core logic. Similarly the Mouse.tcsn serves the same purpose. Of note in these are bird wings, mouse tail and beak which are all planned to receive animation. The logic is primarily hosted in bird.gd, which describes the logic that the bird must obey and also in mouse.gd, which describes the rules that the mouse must obey. 
 
+# Video Demonstration
+![Video Demonstartion](https://youtu.be/c4k3RD8rtWg)
+
 # List of classes/assets in the project
 
 | Class/asset | Source |
